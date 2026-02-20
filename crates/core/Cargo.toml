@@ -1,0 +1,22 @@
+[package]
+name = "cybersomething-core"
+version = "0.1.0"
+edition = "2021"
+description = "Core domain models, mathematics, and utilities for Cybersomething ecosystem recovery platform"
+license = "Apache-2.0"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+thiserror = "1.0"
+tracing = "0.1"
+approx = "0.5"
+ndarray = "0.15"
+ndarray-linalg = "0.15"
+
+[dev-dependencies]
+criterion = "0.5"
+
+[[bench]]
+name = "risk_calculation"
+harness = false
