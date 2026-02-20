@@ -1,0 +1,21 @@
+[workspace]
+members = [
+    "crates/core",
+    "crates/neuromorphic",
+    "crates/geospatial",
+    "crates/data",
+    "crates/sim",
+    "crates/hardware",
+    "crates/api",
+    "crates/cli",
+]
+
+[workspace.dependencies]
+tokio = { version = "1.36", features = ["full"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+thiserror = "1.0"
+tracing = "0.1"
+tracing-subscriber = "0.3"
+ndarray = "0.15"
+approx = "0.5"
